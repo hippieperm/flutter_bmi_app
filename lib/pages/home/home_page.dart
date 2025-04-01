@@ -9,6 +9,16 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("BMI CALCULATOR"),
       ),
+      body: Column(
+        children: [
+          Container(
+            width: 100,
+            height: 100,
+            decoration: BoxDecoration(border: Border.all()),
+          ),
+          Icon(Icons.male)
+        ],
+      ),
     );
   }
 }

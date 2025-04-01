@@ -20,6 +20,18 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
+  void onHeightChanged(double newHeight) {
+    setState(() {
+      height = newHeight;
+    });
+  }
+
+  void onWeightChanged(double newWeight) {
+    setState(() {
+      weight = newWeight;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

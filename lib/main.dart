@@ -26,6 +26,20 @@ class MyApp extends StatelessWidget {
           inactiveTrackColor: Colors.black38,
           trackHeight: 1,
         ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ButtonStyle(
+            shape: WidgetStatePropertyAll(
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
+            ),
+          ),
+        ),
+        outlinedButtonTheme: OutlinedButtonThemeData(
+          style: ButtonStyle(
+            shape: WidgetStatePropertyAll(
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
+            ),
+          ),
+        ),
       ),
       // ===============================================
       darkTheme: ThemeData(
@@ -39,6 +53,20 @@ class MyApp extends StatelessWidget {
           activeTrackColor: Colors.white38,
           inactiveTrackColor: Colors.white38,
           trackHeight: 1,
+        ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ButtonStyle(
+            shape: WidgetStatePropertyAll(
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
+            ),
+          ),
+        ),
+        outlinedButtonTheme: OutlinedButtonThemeData(
+          style: ButtonStyle(
+            shape: WidgetStatePropertyAll(
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
+            ),
+          ),
         ),
       ),
       home: HomePage(),

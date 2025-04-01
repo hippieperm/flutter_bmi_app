@@ -4,12 +4,14 @@ class SliderBox extends StatelessWidget {
   final String lable;
   final double value;
   final String unit;
+  final void Function(double newValue) onChanged;
 
-  const SliderBox({
+  SliderBox({
     super.key,
     required this.lable,
     required this.value,
     required this.unit,
+    required this.onChanged,
   });
 
   @override
@@ -43,7 +45,7 @@ class SliderBox extends StatelessWidget {
         ),
         Slider(
           value: value,
-          onChanged: (v) {},
+          onChanged: onChanged,
           min: 1,
           max: 300,
         )

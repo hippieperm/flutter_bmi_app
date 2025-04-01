@@ -15,7 +15,9 @@ class _HomePageState extends State<HomePage> {
   double weight = 70;
 
   void onGenderChanged(bool male) {
-    isMale = male;
+    setState(() {
+      isMale = male;
+    });
   }
 
   @override

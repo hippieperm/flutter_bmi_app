@@ -42,13 +42,21 @@ class _HomePageState extends State<HomePage> {
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 50),
         child: Column(
           children: [
-            GenderBox(),
+            GenderBox(isMale: isMale, onChanged: onGenderChanged),
             Spacer(),
-            SliderBox(lable: 'HEIGHT', value: 170, unit: 'cm'),
+            SliderBox(
+                lable: 'HEIGHT',
+                value: height,
+                unit: 'cm',
+                onChanged: onHeightChanged),
             Spacer(),
-            SliderBox(lable: 'WEIGHT', value: 70, unit: 'kg'),
+            SliderBox(
+                lable: 'WEIGHT',
+                value: weight,
+                unit: 'kg',
+                onChanged: onWeightChanged),
             Spacer(),
-            SizedBox(
+            SizedBox( 
               width: double.infinity,
               height: 56,
               child: ElevatedButton(

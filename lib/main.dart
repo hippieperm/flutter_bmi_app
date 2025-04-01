@@ -29,8 +29,12 @@ class MyApp extends StatelessWidget {
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ButtonStyle(
             shape: WidgetStatePropertyAll(
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
+              RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(18),
+              ),
             ),
+            backgroundColor: WidgetStatePropertyAll(Colors.pinkAccent),
+            foregroundColor: WidgetStatePropertyAll(Colors.white),
           ),
         ),
         outlinedButtonTheme: OutlinedButtonThemeData(
@@ -38,6 +42,12 @@ class MyApp extends StatelessWidget {
             shape: WidgetStatePropertyAll(
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
             ),
+            side: WidgetStatePropertyAll(
+              BorderSide(
+                color: Colors.black38,
+              ),
+            ),
+            foregroundColor: WidgetStatePropertyAll(Colors.black),
           ),
         ),
       ),

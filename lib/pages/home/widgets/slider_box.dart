@@ -27,7 +27,7 @@ class SliderBox extends StatelessWidget {
             ),
             Spacer(),
             Text(
-              '$value',
+              value.toStringAsFixed(0),
               style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,

@@ -12,8 +12,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      themeMode: ThemeMode.light,
-      // themeMode: ThemeMode.dark,
+      // themeMode: ThemeMode.light,
+      themeMode: ThemeMode.dark,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.pinkAccent,
@@ -67,8 +67,12 @@ class MyApp extends StatelessWidget {
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ButtonStyle(
             shape: WidgetStatePropertyAll(
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
+              RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(18),
+              ),
             ),
+            backgroundColor: WidgetStatePropertyAll(Colors.pinkAccent),
+            foregroundColor: WidgetStatePropertyAll(Colors.white),
           ),
         ),
         outlinedButtonTheme: OutlinedButtonThemeData(
@@ -76,6 +80,12 @@ class MyApp extends StatelessWidget {
             shape: WidgetStatePropertyAll(
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
             ),
+            side: WidgetStatePropertyAll(
+              BorderSide(
+                color: Colors.white30,
+              ),
+            ),
+            foregroundColor: WidgetStatePropertyAll(Colors.white),
           ),
         ),
       ),

@@ -27,7 +27,24 @@ class HomePage extends StatelessWidget {
             min: 10,
             max: 100,
             onChanged: (v) {},
-          )
+          ),
+          SizedBox(
+            width: 200,
+            height: 56,
+            child: ElevatedButton(
+              onPressed: () {},
+              child: Text('CALCULATE'),
+            ),
+          ),
+          SizedBox(height: 10),
+          SizedBox(
+            width: 200,
+            height: 56,
+            child: OutlinedButton(
+              onPressed: () {},
+              child: Text('RECALCULATE'),
+            ),
+          ),
         ],
       ),
     );

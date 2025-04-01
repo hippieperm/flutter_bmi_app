@@ -27,6 +27,7 @@ class MyApp extends StatelessWidget {
           trackHeight: 1,
         ),
       ),
+      // ===============================================
       darkTheme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.pinkAccent,

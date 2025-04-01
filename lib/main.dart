@@ -12,14 +12,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // themeMode: ThemeMode.light,
-      themeMode: ThemeMode.dark,
+      themeMode: ThemeMode.light,
+      // themeMode: ThemeMode.dark,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.pinkAccent,
           brightness: Brightness.light,
         ),
         dividerColor: Colors.black38,
+        highlightColor: Colors.pinkAccent,
         sliderTheme: SliderThemeData(
           thumbColor: Colors.pinkAccent,
           activeTrackColor: Colors.black38,
@@ -57,6 +58,7 @@ class MyApp extends StatelessWidget {
           seedColor: Colors.pinkAccent,
           brightness: Brightness.dark,
         ),
+        highlightColor: Colors.pinkAccent,
         dividerColor: Colors.white38,
         sliderTheme: SliderThemeData(
           thumbColor: Colors.pinkAccent,

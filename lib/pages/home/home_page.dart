@@ -45,6 +45,12 @@ class HomePage extends StatelessWidget {
               child: Text('RECALCULATE'),
             ),
           ),
+          Text(
+            'test',
+            style: TextStyle(
+              color: Theme.of(context).highlightColor,
+            ),
+          )
         ],
       ),
     );

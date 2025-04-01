@@ -2,8 +2,21 @@ import 'package:a/pages/home/widgets/gender_box.dart';
 import 'package:a/pages/home/widgets/slider_box.dart';
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  bool isMale = true;
+  double height = 181;
+  double weight = 70;
+
+  void onGenderChanged(bool male) {
+    isMale = male;
+  }
 
   @override
   Widget build(BuildContext context) {

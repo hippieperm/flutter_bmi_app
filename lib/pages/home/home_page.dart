@@ -1,3 +1,5 @@
+import 'package:a/pages/home/widgets/gender_box.dart';
+import 'package:a/pages/home/widgets/slider_box.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -9,49 +11,31 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("BMI CALCULATOR"),
       ),
-      body: Column(
-        children: [
-          Container(
-            width: 100,
-            height: 100,
-            decoration: BoxDecoration(
-              border: Border.all(
-                color: Theme.of(context).dividerColor,
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20),
+        child: Column(
+          children: [
+            GenderBox(),
+            SliderBox(
+              lable: 'HEIGHT',
+              value: 170,
+              unit: 'cm',
+            ),
+            SliderBox(
+              lable: 'WEIGHT',
+              value: 70,
+              unit: 'kg',
+            ),
+            SizedBox(
+              width: double.infinity,
+              height: 56,
+              child: ElevatedButton(
+                onPressed: () {},
+                child: Text('CALCULATE'),
               ),
             ),
-          ),
-          Icon(Icons.male),
-          Text('MALE'),
-          Slider(
-            value: 50,
-            min: 10,
-            max: 100,
-            onChanged: (v) {},
-          ),
-          SizedBox(
-            width: 200,
-            height: 56,
-            child: ElevatedButton(
-              onPressed: () {},
-              child: Text('CALCULATE'),
-            ),
-          ),
-          SizedBox(height: 10),
-          SizedBox(
-            width: 200,
-            height: 56,
-            child: OutlinedButton(
-              onPressed: () {},
-              child: Text('RECALCULATE'),
-            ),
-          ),
-          Text(
-            'test',
-            style: TextStyle(
-              color: Theme.of(context).highlightColor,
-            ),
-          )
-        ],
+          ],
+        ),
       ),
     );
   }

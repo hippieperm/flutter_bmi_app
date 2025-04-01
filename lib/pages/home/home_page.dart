@@ -16,7 +16,8 @@ class HomePage extends StatelessWidget {
             height: 100,
             decoration: BoxDecoration(border: Border.all()),
           ),
-          Icon(Icons.male)
+          Icon(Icons.male),
+          Text('MALE')
         ],
       ),
     );

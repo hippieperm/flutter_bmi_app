@@ -5,19 +5,19 @@
 ```
 lib/
 📦lib
- ┣ 📂pages
- ┃ ┣ 📂home
- ┃ ┃ ┣ 📂widgets
- ┃ ┃ ┃ ┣ 📜gender_box.dart
- ┃ ┃ ┃ ┗ 📜slider_box.dart
- ┃ ┃ ┗ 📜home_page.dart
- ┃ ┗ 📂result
- ┃ ┃ ┣ 📂widgets
- ┃ ┃ ┃ ┣ 📜result_gauge.dart
- ┃ ┃ ┃ ┗ 📜result_text.dart
- ┃ ┃ ┗ 📜result_page.dart
- ┣ 📜main.dart
- ┗ 📜theme.dart
+ ┣ 📂pages                    # 앱의 모든 화면을 관리하는 디렉토리
+ ┃ ┣ 📂home                   # 메인 화면 관련 파일들
+ ┃ ┃ ┣ 📂widgets              # 메인 화면에서 사용되는 위젯들
+ ┃ ┃ ┃ ┣ 📜gender_box.dart    # 성별 선택 위젯
+ ┃ ┃ ┃ ┗ 📜slider_box.dart    # 키/몸무게 슬라이더 위젯
+ ┃ ┃ ┗ 📜home_page.dart       # 메인 화면 구현
+ ┃ ┗ 📂result                 # 결과 화면 관련 파일들
+ ┃ ┃ ┣ 📂widgets              # 결과 화면에서 사용되는 위젯들
+ ┃ ┃ ┃ ┣ 📜result_gauge.dart  # BMI 게이지 표시 위젯
+ ┃ ┃ ┃ ┗ 📜result_text.dart   # BMI 결과 텍스트 표시 위젯
+ ┃ ┃ ┗ 📜result_page.dart     # 결과 화면 구현
+ ┣ 📜main.dart                # 앱의 진입점 및 라우팅 설정
+ ┗ 📜theme.dart               # 앱의 테마 및 스타일 설정
 ```
 
 ## 🎨 주요 기능
@@ -35,8 +35,6 @@ lib/
   <img src="https://github.com/user-attachments/assets/a0cbeb86-44d6-4320-baa5-1c1b662fee7f" width="225" alt="메인 화면">
   <img src="https://github.com/user-attachments/assets/c3b9615c-586d-4cc6-a342-19088d301821" width="225" alt="결과 화면">
 </div>
-
-
 
 ## 🛠️ 기술 스택
 

@@ -7,7 +7,7 @@ final lightTheme = ThemeData(
   ),
   dividerColor: Colors.black38,
   highlightColor: Colors.pinkAccent,
-  sliderTheme: SliderThemeData(
+  sliderTheme: const SliderThemeData(
     thumbColor: Colors.pinkAccent,
     activeTrackColor: Colors.black38,
     inactiveTrackColor: Colors.black38,
@@ -20,8 +20,8 @@ final lightTheme = ThemeData(
           borderRadius: BorderRadius.circular(18),
         ),
       ),
-      backgroundColor: WidgetStatePropertyAll(Colors.pinkAccent),
-      foregroundColor: WidgetStatePropertyAll(Colors.white),
+      backgroundColor: const WidgetStatePropertyAll(Colors.pinkAccent),
+      foregroundColor: const WidgetStatePropertyAll(Colors.white),
     ),
   ),
   outlinedButtonTheme: OutlinedButtonThemeData(
@@ -29,12 +29,12 @@ final lightTheme = ThemeData(
       shape: WidgetStatePropertyAll(
         RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
       ),
-      side: WidgetStatePropertyAll(
+      side: const WidgetStatePropertyAll(
         BorderSide(
           color: Colors.black38,
         ),
       ),
-      foregroundColor: WidgetStatePropertyAll(Colors.black),
+      foregroundColor: const WidgetStatePropertyAll(Colors.black),
     ),
   ),
 );
@@ -45,7 +45,7 @@ final darkTheme = ThemeData(
   ),
   highlightColor: Colors.pinkAccent,
   dividerColor: Colors.white38,
-  sliderTheme: SliderThemeData(
+  sliderTheme: const SliderThemeData(
     thumbColor: Colors.pinkAccent,
     activeTrackColor: Colors.white38,
     inactiveTrackColor: Colors.white38,
@@ -58,8 +58,8 @@ final darkTheme = ThemeData(
           borderRadius: BorderRadius.circular(18),
         ),
       ),
-      backgroundColor: WidgetStatePropertyAll(Colors.pinkAccent),
-      foregroundColor: WidgetStatePropertyAll(Colors.white),
+      backgroundColor: const WidgetStatePropertyAll(Colors.pinkAccent),
+      foregroundColor: const WidgetStatePropertyAll(Colors.white),
     ),
   ),
   outlinedButtonTheme: OutlinedButtonThemeData(
@@ -67,12 +67,12 @@ final darkTheme = ThemeData(
       shape: WidgetStatePropertyAll(
         RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
       ),
-      side: WidgetStatePropertyAll(
+      side: const WidgetStatePropertyAll(
         BorderSide(
           color: Colors.white30,
         ),
       ),
-      foregroundColor: WidgetStatePropertyAll(Colors.white),
+      foregroundColor: const WidgetStatePropertyAll(Colors.white),
     ),
   ),
 );

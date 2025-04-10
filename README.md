@@ -21,6 +21,8 @@ lib/
 <div style="display: flex; gap: 20px;">
   <img src="screenshots/screenshot1.png" width="300" alt="메인 화면">
   <img src="screenshots/screenshot2.png" width="300" alt="결과 화면">
+  <img src="screenshots/screenshot1.png" width="300" alt="메인 화면">
+  <img src="screenshots/screenshot2.png" width="300" alt="결과 화면">
 </div>
 
 ## 🛠️ 기술 스택

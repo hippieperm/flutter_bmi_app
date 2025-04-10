@@ -6,7 +6,7 @@ class SliderBox extends StatelessWidget {
   final String unit;
   final void Function(double newValue) onChanged;
 
-  SliderBox({
+  const SliderBox({
     super.key,
     required this.lable,
     required this.value,
@@ -23,21 +23,21 @@ class SliderBox extends StatelessWidget {
           children: [
             Text(
               lable,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 20,
               ),
             ),
-            Spacer(),
+            const Spacer(),
             Text(
               value.toStringAsFixed(0),
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
               ),
             ),
             Text(
               unit,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 20,
               ),
             ),

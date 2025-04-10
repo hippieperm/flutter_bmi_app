@@ -3,20 +3,20 @@ import 'package:flutter/material.dart';
 
 class GenderBox extends StatelessWidget {
   final bool isMale;
-  void Function(bool newValue) onChanged;
+  final void Function(bool newValue) onChanged;
 
-  GenderBox({
-    Key? key,
+  const GenderBox({
+    super.key,
     required this.isMale,
     required this.onChanged,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
         gender(context, Icons.male, 'MALE', isMale, true),
-        SizedBox(width: 8),
+        const SizedBox(width: 8),
         gender(context, Icons.female, 'FEMALE', !isMale, false),
       ],
     );
@@ -61,7 +61,7 @@ class GenderBox extends StatelessWidget {
                   opacity: selected ? 1 : 0.3,
                   child: Text(
                     text,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
                     ),

@@ -69,9 +69,8 @@ class _HomePageState extends State<HomePage> {
                     context,
                     MaterialPageRoute(
                       builder: (context) {
-                        return const ResultPage();
+                        return ResultPage(bmi: bmi);
                       },
-                      settings: RouteSettings(arguments: bmi),
                     ),
                   );
                 },

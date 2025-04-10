@@ -19,11 +19,13 @@ lib/
 ## 🖼️ 스크린샷
 
 <div style="display: flex; gap: 20px;">
-  <img src="screenshots/screenshot1.png" width="300" alt="메인 화면">
-  <img src="screenshots/screenshot2.png" width="300" alt="결과 화면">
-  <img src="screenshots/screenshot1.png" width="300" alt="메인 화면">
-  <img src="screenshots/screenshot2.png" width="300" alt="결과 화면">
+  <img src="https://github.com/user-attachments/assets/7a80d8cd-2a43-418c-ba7e-e78e32b5587e" width="225" alt="메인 화면">
+  <img src="https://github.com/user-attachments/assets/9d02bd05-1b63-411d-98b9-f148409eabfe" width="225" alt="결과 화면">
+  <img src="https://github.com/user-attachments/assets/a0cbeb86-44d6-4320-baa5-1c1b662fee7f" width="225" alt="메인 화면">
+  <img src="https://github.com/user-attachments/assets/c3b9615c-586d-4cc6-a342-19088d301821" width="225" alt="결과 화면">
 </div>
+
+
 
 ## 🛠️ 기술 스택
 

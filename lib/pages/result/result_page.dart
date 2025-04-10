@@ -1,3 +1,5 @@
+import 'package:a/pages/result/widgets/result_gauge.dart';
+import 'package:a/pages/result/widgets/result_text.dart';
 import 'package:flutter/material.dart';
 
 class ResultPage extends StatelessWidget {
@@ -18,14 +20,20 @@ class ResultPage extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
           children: [
+            const Spacer(),
+            ResultGauge(bmi: bmi),
+            const SizedBox(height: 50),
+            ResultText(bmi: bmi),
+            const Spacer(),
             SizedBox(
               width: double.infinity,
               height: 56,
               child: OutlinedButton(
                 onPressed: () {},
-                child: Text('RECALCULATE'),
+                child: const Text('RECALCULATE'),
               ),
-            )
+            ),
+            const SizedBox(height: 50),
           ],
         ),
       ),

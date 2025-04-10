@@ -4,9 +4,20 @@
 
 ```
 lib/
-├── 📄 main.dart          # 앱의 진입점
-├── 📄 theme.dart         # 앱의 테마 설정
-└── 📂 pages/            # 화면 관련 위젯들
+📦lib
+ ┣ 📂pages
+ ┃ ┣ 📂home
+ ┃ ┃ ┣ 📂widgets
+ ┃ ┃ ┃ ┣ 📜gender_box.dart
+ ┃ ┃ ┃ ┗ 📜slider_box.dart
+ ┃ ┃ ┗ 📜home_page.dart
+ ┃ ┗ 📂result
+ ┃ ┃ ┣ 📂widgets
+ ┃ ┃ ┃ ┣ 📜result_gauge.dart
+ ┃ ┃ ┃ ┗ 📜result_text.dart
+ ┃ ┃ ┗ 📜result_page.dart
+ ┣ 📜main.dart
+ ┗ 📜theme.dart
 ```
 
 ## 🎨 주요 기능

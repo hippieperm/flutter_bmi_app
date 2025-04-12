@@ -1,5 +1,5 @@
-import 'package:a/pages/result/widgets/result_gauge.dart';
-import 'package:a/pages/result/widgets/result_text.dart';
+import 'widgets/result_gauge.dart';
+import 'widgets/result_text.dart';
 import 'package:flutter/material.dart';
 
 class ResultPage extends StatelessWidget {

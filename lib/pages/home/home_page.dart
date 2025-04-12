@@ -1,6 +1,6 @@
-import 'package:a/pages/home/widgets/gender_box.dart';
-import 'package:a/pages/home/widgets/slider_box.dart';
-import 'package:a/pages/result/result_page.dart';
+import 'widgets/gender_box.dart';
+import 'widgets/slider_box.dart';
+import '../result/result_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
